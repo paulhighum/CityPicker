@@ -8,6 +8,9 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">City Picker</h1>
         </header>
+        <main>
+          <button id="login-btn" type="button">Log In</button>
+        </main>
       </div>
     );
   }
