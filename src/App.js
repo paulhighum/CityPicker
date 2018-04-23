@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom"
 import './App.css';
 
 class App extends Component {
+
+
+
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">City Picker</h1>
-        </header>
-        <main>
-          <button id="login-btn" type="button">Log In</button>
-        </main>
-      </div>
-    );
+    return <Router>
+        <div className="App">
+          <header className="App-header">
+            <h1 className="App-title">City Picker</h1>
+          </header>
+          <main>
+            {/* <Route exact path="/" render={() => <Redirect to="/main" />} />
+            <Route path="/login" render={() => <Login/>} />
+            <Route path="/profile" render={() => <Profile/>} />
+            <Route path="/main" render={() => <Main />} />
+            <Route path="/logout" render={() => <Logout />} /> */}
+          </main>
+        </div>
+      </Router>;
   }
 }
 
